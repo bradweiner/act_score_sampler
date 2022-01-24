@@ -28,7 +28,35 @@ Admittedly (and clearly) I am not a trained statistician. Therefore, I am intrig
 
 ### The Data Files
 
-All data in this repo is synthetical and can therefore be shared. 
+All data in this repo is synthetically produced and can therefore be shared. 
+
+The contents:
+
+`/data/raw/akil_combinations.csv` <--- All of the possible combinations in the search space
+
+`/data/transformed/first_row_df.csv` <--- A dummy file that is the stub for creating the full descriptives
+
+`/data/transformed/run_file_pre_join.csv` <--- The summary statistics before joining on with the ids and the probabilities
+
+`/data/transformed/run_file_post_join.csv` <--- The summary statistics after joining on with the ids and the probabilities
+
+`/data/final_analytic_files/final_file_for_akil.csv` <--- Final analytic file with better named columns and removed useless columns
+
+### License
+
+
+
+### Code of Conduct
+
+Please see the [code of conduct](https://github.com/bradweiner/act_score_sampler/blob/main/CODE_OF_CONDUCT.md) in this repo.
+
+
+
+
+
+
+
+
 
 
 
