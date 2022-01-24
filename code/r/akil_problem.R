@@ -9,7 +9,7 @@ bin2 <- 24:29
 bin3 <- 18:23
 bin4 <- 12:17
 bin5 <- 6:11
-bin6 <- 0:5
+bin6 <- 1:5
 
 
 prob_combo <- seq(.7,.99,.01)
@@ -28,6 +28,9 @@ head(b)
 
 ##TRYING TO LOOP THROUGH HERE##
 
+#test
+blarney <- seq(1,100,1)
+
 blarney <- seq(1,100000000,100000)
 blarney <- seq(100000001,200000000,100000)
 blarney <- seq(200000001,300000000,100000)
@@ -45,13 +48,16 @@ tic("Starting Loop")
 for(i in 1:length(blarney)){
     
     c <- b %>%
-        slice(blarney[i]:(blarney[i] + 99999)) %>%
+        # slice(blarney[i]:(blarney[i] + 99999)) %>%
+        slice(blarney[i]:(blarney[i] + 1)) %>%
         rowwise() %>%
         mutate(total_prob = sum(var1,var2,var3,var4,var5,var6,na.rm = T)) %>%
         filter(total_prob == 1) %>%
         as.data.frame(.) 
     
     temp <- bind_rows(temp,c)
+    
+    cat('Processing row', i, 'of', nrow(b),'\n')
     
 }
 
