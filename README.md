@@ -40,7 +40,11 @@ The contents:
 
 `/data/transformed/run_file_post_join.csv` <--- The summary statistics after joining on with the ids and the probabilities
 
-`/data/final_analytic_files/final_file_for_akil.csv` <--- Final analytic file with better named columns and removed useless columns
+`/data/final_analytic_files/final_file_for_akil.csv` <--- Final analytic file with better named columns and removed useless columns  
+
+### Results and Viz
+
+This is only the data. Please send your results and viz my way. Very curious what anyone out there finds, discovers or learns from this synthetic data set.
 
 ### License
 
