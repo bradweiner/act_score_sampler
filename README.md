@@ -16,7 +16,7 @@ To answer this question, I attempted to create an analytic data set using a two 
 
 Unfortunately, every probability ranging from .01 - .99 was simply too large a search space given existing time, memory, and compute. Therefore, I shrunk the search space to enable the highest ACT score bucket (30-36) to vary between .70 and .99 and the bottom five buckets to vary between .01 and .30. The assumption was that selective schools would seek to maximize the top bin at the expense of the others. This assumption might not be correct.
 
-Even with those limitations, the search space yielded 729 million total combinations of which approximately 128,000 summed to zero.
+Even with those limitations, the search space yielded 729 million total combinations of which approximately 128,000 summed to one.
 
 2. Programmatically sample theoretical "incoming classes" and generating summary statistics for each of the acceptable combinations. This is the final analytic file which can be visualized, modeled, or summarized for greater clarity on the question
 
